@@ -33,7 +33,7 @@ jobs:
           context: ./Expense_Backend
           file: ./Expense_Backend/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/k8-backend-lab14:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/practice-backend-lab14:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -42,4 +42,4 @@ jobs:
           context: ./Expense_Frontend
           file: ./Expense_Frontend/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/k8-frontend-lab14:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/practice-frontend-lab14:latest
