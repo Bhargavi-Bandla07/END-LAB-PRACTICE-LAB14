@@ -22,7 +22,7 @@ mysql:
 # Backend Configuration
 # =====================
 backend:
-  image: bhargavi079/k8-backend-lab14:latest
+  image: bhargavi079/practice-backend-lab14:latest
   replicas: 2
   port: 2008
   nodePort: 30035
@@ -43,7 +43,7 @@ backend:
 # Frontend Configuration
 # =====================
 frontend:
-  image: bhargavi079/k8-frontend-lab14:latest
+  image: bhargavi079/practice-frontend-lab14:latest
   replicas: 2
   port: 80
   nodePort: 30070
